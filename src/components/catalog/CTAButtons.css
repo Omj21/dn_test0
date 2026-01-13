@@ -1,0 +1,78 @@
+.cta-buttons-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-button {
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.cta-button-primary {
+  background-color: #B8860B;
+  color: #ffffff;
+}
+
+.cta-button-primary:hover {
+  background-color: #9a6f09;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+}
+
+.cta-button-secondary {
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #B8860B;
+}
+
+.cta-button-secondary:hover {
+  background-color: #f5f5f5;
+  border-color: #9a6f09;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .cta-buttons-section {
+    padding: 30px 0;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+.products-section {
+  background-color: white;
+}
+
+.products-section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.products-section-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.products-section-cta {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.featured-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.featured-section-item {
+  width: 100%;
+}
+
+.featured-section-image-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.featured-section-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-section-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-section-image-wrapper:hover .featured-section-overlay {
+  opacity: 1;
+}
+
+.subcategories-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.subcategory-item {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.featured-section-link {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.featured-section-link:hover {
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  .products-section-container {
+    padding: 0 16px;
+  }
+  
+  .products-section-description {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .products-section-cta {
+    margin-bottom: 48px;
+  }
+  
+  .featured-sections {
+    gap: 24px;
+  }
+  
+  .featured-section-overlay {
+    padding: 24px;
+    opacity: 1;
+  }
+  
+  .subcategories-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .subcategory-item {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+

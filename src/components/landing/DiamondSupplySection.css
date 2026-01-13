@@ -1,0 +1,124 @@
+.diamond-supply {
+  background-color: white;
+}
+
+.diamond-supply-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.diamond-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 48px;
+}
+
+.diamond-card {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.diamond-card:hover {
+  transform: translateY(-4px);
+}
+
+.diamond-card-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.diamond-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.diamond-card:hover .diamond-card-image {
+  transform: scale(1.1);
+}
+
+.diamond-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8));
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.diamond-card:hover .diamond-card-overlay {
+  opacity: 1;
+}
+
+.diamond-card-title {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.diamond-supply-description {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.diamond-supply-description p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.diamond-supply-description strong {
+  color: #2c2c2c;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .diamond-cards-grid {
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .diamond-supply-container {
+    padding: 0 16px;
+  }
+  
+  .diamond-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  
+  .diamond-card-title {
+    font-size: 16px;
+  }
+  
+  .diamond-supply-description p {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+

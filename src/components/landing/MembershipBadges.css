@@ -1,0 +1,106 @@
+.membership-badges {
+  background-color: white;
+}
+
+.membership-badges-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.membership-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #333;
+  margin-bottom: 48px;
+}
+
+.membership-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.membership-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  min-width: 150px;
+}
+
+.membership-logo {
+  max-height: 100px;
+  max-width: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.membership-logo-wrapper:hover .membership-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.membership-logo-placeholder {
+  background-color: #f5f5f5;
+  color: #666;
+  padding: 20px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .membership-logos {
+    gap: 40px;
+  }
+  
+  .membership-logo-wrapper {
+    height: 80px;
+    min-width: 120px;
+  }
+  
+  .membership-logo {
+    max-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .membership-badges-container {
+    padding: 60px 16px;
+  }
+  
+  .membership-title {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .membership-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .membership-logo-wrapper {
+    height: 70px;
+    min-width: 100px;
+  }
+  
+  .membership-logo {
+    max-height: 70px;
+  }
+}
+
+
+
